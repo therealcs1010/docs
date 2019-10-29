@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]--><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Asciidoctor 1.5.6.1"><title>AlgoSenpai Adventures - User Guide</title><link rel="stylesheet" href="stylesheets/gh-pages.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="stylesheets/coderay-asciidoctor.css"></head><body class="article"><div id="seedu-header"><nav class="navbar navbar-lg navbar-light bg-lighter"><div class="container"><a class="navbar-brand" href="https://se-edu.github.io/"><img src="images/SeEduLogo.png" alt="SE-EDU"></a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level1">AB-1</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level2">AB-2</a></li><li class="nav-item"><a class="nav-link active" href="index.html">AB-3</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/addressbook-level4">AB-4</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/collate">Collate</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/se-book">Book</a></li><li class="nav-item"><a class="nav-link" href="https://se-edu.github.io/learningresources">Resources</a></li></ul></div></nav></div><div id="site-header"><nav class="navbar navbar-light bg-light"><div class="container"><a class="navbar-brand" href="index.html">AddressBook-Level4</a><ul class="navbar-nav"><li class="nav-item"><a class="nav-link active" href="UserGuide.html">User Guide</a></li><li class="nav-item"><a class="nav-link" href="DeveloperGuide.html">Developer Guide</a></li><li class="nav-item"><a class="nav-link" href="LearningOutcomes.html">LOs</a></li><li class="nav-item"><a class="nav-link" href="AboutUs.html">About Us</a></li><li class="nav-item"><a class="nav-link" href="ContactUs.html">Contact Us</a></li><li class="navitem"><a class="nav-link" href="https://github.com/se-edu/addressbook-level4"><span class="fa fa-github fa-lg" aria-hidden="true"></span>&nbsp;View on GitHub</a></li></ul></div></nav></div><div id="header"><h1>AlgoSenpai Adventures - User Guide</h1></div><div id="content"><div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>By: <code>CS2113T-T09-3</code>      Since: <code>Sept 2019</code>      Licence: <code>MIT</code></p>
+</div>
+</div>
+<div id="toc" class="toc">
+<div id="toctitle"></div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#quick-start">2. Quick Start</a></li>
+<li><a href="#Features">3. Features</a>
+<ul class="sectlevel2">
+<li><a href="#view-all-the-commands-available-code-menu-code">3.1. View all the commands available : <code>menu</code></a></li>
+<li><a href="#start-the-game-code-start-code">3.2. Start the game : <code>start</code></a></li>
+<li><a href="#choose-a-chapter-code-select-code">3.3. Choose a chapter : <code>select</code></a></li>
+<li><a href="#list-results-of-a-chapter-code-result-code">3.4. List results of a chapter : <code>result</code></a></li>
+<li><a href="#generate-an-overall-report-code-report-code">3.5. Generate an overall report : <code>report</code></a></li>
+<li><a href="#return-to-the-previous-question-code-back-code">3.6. Return to the previous question : <code>back</code></a></li>
+<li><a href="#list-previously-entered-commands-code-history-code">3.7. List previously entered commands : <code>history</code></a></li>
+<li><a href="#undo-a-console-command-code-undo-code">3.8. Undo a console command : <code>undo</code></a></li>
+<li><a href="#clear-results-of-a-chapter-code-clear-code">3.9. Clear results of a chapter : <code>clear</code></a></li>
+<li><a href="#reset-the-whole-game-code-reset-code">3.10. Reset the whole game : <code>reset</code></a></li>
+<li><a href="#manually-save-the-game-code-save-code">3.11. Manually save the game : <code>save</code></a></li>
+<li><a href="#provides-suggestions-to-users-to-improve-code-help-code">3.12. Provides suggestions to users to improve : <code>help</code></a></li>
+<li><a href="#exits-the-game-code-exit-code">3.13. Exits the game : <code>exit</code></a></li>
+<li><a href="#print-questions-code-print-code-code-coming-in-v2-0-code">3.14. Print questions : <code>print</code> <code>[coming in v2.0]</code></a></li>
+<li><a href="#archive-questions-code-archive-code-code-coming-in-v2-0-code">3.15. Archive questions : <code>archive</code> <code>[coming in v2.0]</code></a></li>
+</ul>
+</li>
+<li><a href="#faq">4. FAQ</a></li>
+<li><a href="#command-summary">5. Command Summary</a></li>
+</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="introduction"><a class="link" href="#introduction">1. Introduction</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>AlgoSenpai Adventures (ASA) is for students taking CS2040 or any similar data structures and algorithms module who
+want to reinforce their understanding of the topics in a fast and engaging way, rather than through rote memorisation.
+More importantly, AB4 is optimized for those who prefer to work with a Command Line Interface (CLI) while still having
+the benefits of a Graphical User Interface (GUI). If you can type fast, ASA can be a more time-efficient solution to
+practice your understanding as compared to VisuAlgo (which uses clicking). Interested? Jump to the <a href="#quick-start">Section 2, &#8220;Quick Start&#8221;</a> to
+get started. Enjoy!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="quick-start"><a class="link" href="#quick-start">2. Quick Start</a></h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Ensure you have Java <code>11</code> or above installed in your Computer.</p>
+</li>
+<li>
+<p>Download the latest <code>ASA.jar</code> <a href="https://github.com/AY1920S1-CS2113T-T09-3/main/releases">here</a>.</p>
+</li>
+<li>
+<p>Copy the file to the folder you want to use as the home folder for your Address Book.</p>
+</li>
+<li>
+<p>Double-click the file to start the app. The GUI should appear in a few seconds.</p>
+<div class="imageblock">
+<div class="content">
+<img src="images/ASAUi.jpg" alt="ASAUi" width="790">
+</div>
+</div>
+</li>
+<li>
+<p>Type the command in the command box and press <kbd>Enter</kbd> to execute it.<br>
+e.g. typing <strong><code>help</code></strong> and pressing <kbd>Enter</kbd> will open the help window.</p>
+</li>
+<li>
+<p>Some example commands you can try:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong><code>menu</code></strong> : lists the menu directory</p>
+</li>
+<li>
+<p><strong><code>select</code></strong><code>3</code> : selects Chapter 3 to be included in th game.</p>
+</li>
+<li>
+<p><strong><code>exit</code></strong> : exits the app</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Refer to <a href="#Features">Section 3, &#8220;Features&#8221;</a> for details of each command.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Features"><a class="link" href="#Features">3. Features</a></h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><strong>Command Format</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Words in <code>UPPER_CASE</code> are the parameters to be supplied by the user e.g. in <code>select CHAPTER</code>, <code>CHAPTER</code> is a parameter which can be used as <code>select 3</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="view-all-the-commands-available-code-menu-code"><a class="link" href="#view-all-the-commands-available-code-menu-code">3.1. View all the commands available : <code>menu</code></a></h3>
+<div class="paragraph">
+<p>This command is for new users, users who are still learning the console commands, or have forgotten a particular command.
+<code>menu</code> will list all the commands that are available in the program.<br>
+Format: <code>menu</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="start-the-game-code-start-code"><a class="link" href="#start-the-game-code-start-code">3.2. Start the game : <code>start</code></a></h3>
+<div class="paragraph">
+<p>This command allows you to start the game from the interface.<br>
+Format: <code>start</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="choose-a-chapter-code-select-code"><a class="link" href="#choose-a-chapter-code-select-code">3.3. Choose a chapter : <code>select</code></a></h3>
+<div class="paragraph">
+<p>This command allows you to choose the chapter of the game to be run. Chapters are numbered from 1-5, allowing you to
+practice or play a particular chapter to enhance their understanding.<br>
+Format: <code>select CHAPTER</code><br></p>
+</div>
+<div class="paragraph">
+<p>Example :<br>
+<code>select 1</code> will run the chapter on Sorting.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="list-results-of-a-chapter-code-result-code"><a class="link" href="#list-results-of-a-chapter-code-result-code">3.4. List results of a chapter : <code>result</code></a></h3>
+<div class="paragraph">
+<p>This command provides a comprehensive summary of results for a particular chapter. You can expect to get a better
+understanding of their skills in a particular chapter from the results shown.<br>
+Format : <code>result CHAPTER</code><br>
+Example :<br>
+<code>result 1</code> will print the results of the Sorting chapter.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="generate-an-overall-report-code-report-code"><a class="link" href="#generate-an-overall-report-code-report-code">3.5. Generate an overall report : <code>report</code></a></h3>
+<div class="paragraph">
+<p>This command provides a comprehensive summary of results for all the chapters. You can expect to see which chapters you
+need to improve on, and which chapters are good enough from the comments given.<br>
+Format : <code>report</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="return-to-the-previous-question-code-back-code"><a class="link" href="#return-to-the-previous-question-code-back-code">3.6. Return to the previous question : <code>back</code></a></h3>
+<div class="paragraph">
+<p>This command allows users to return to the last question if you made a mistake. This would help prevent any accidental input,
+rendering the answer as wrong.<br>
+Format : <code>back</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="list-previously-entered-commands-code-history-code"><a class="link" href="#list-previously-entered-commands-code-history-code">3.7. List previously entered commands : <code>history</code></a></h3>
+<div class="paragraph">
+<p>This command provides a list of commands you have entered. This would be useful in the event if some console command has changed
+the your result but you has forgotten what commands you have entered.<br>
+Format : <code>history NUMBER</code><br>
+Example :<br>
+<code>history 5</code> will print the last 5 console commands given.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="undo-a-console-command-code-undo-code"><a class="link" href="#undo-a-console-command-code-undo-code">3.8. Undo a console command : <code>undo</code></a></h3>
+<div class="paragraph">
+<p>This command provides a way for you to undo an accidental wrong command. This is mainly for inexperienced users who are not yet
+familiar with the results of the numerous commands.<br>
+Format : <code>undo</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="clear-results-of-a-chapter-code-clear-code"><a class="link" href="#clear-results-of-a-chapter-code-clear-code">3.9. Clear results of a chapter : <code>clear</code></a></h3>
+<div class="paragraph">
+<p>This command removes all existing results on a particular chapter. This feature is for users who wish to see how have they
+improved in comparison to the previous round.<br>
+Format : <code>clear CHAPTER</code><br>
+Example :<br>
+<code>clear 1</code> will print the results of the Sorting chapter.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="reset-the-whole-game-code-reset-code"><a class="link" href="#reset-the-whole-game-code-reset-code">3.10. Reset the whole game : <code>reset</code></a></h3>
+<div class="paragraph">
+<p>This command provides a way for you to restart the entire game by clearing all progress and results. This is for users who
+wish to repeat the game after clearing all the stages.<br>
+Format : <code>reset</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="manually-save-the-game-code-save-code"><a class="link" href="#manually-save-the-game-code-save-code">3.11. Manually save the game : <code>save</code></a></h3>
+<div class="paragraph">
+<p>This command provides a way for you to save the game manually. Normally, the game would already be saving your game for you at
+certain checkpoints. However, in the event that our auto-save function does not work, it is highly recommended to do a manual save
+from time to time.<br>
+Format : <code>save</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="provides-suggestions-to-users-to-improve-code-help-code"><a class="link" href="#provides-suggestions-to-users-to-improve-code-help-code">3.12. Provides suggestions to users to improve : <code>help</code></a></h3>
+<div class="paragraph">
+<p>This command provides a suggestion of problems that you can solve to improve at a particular chapter.<br>
+Format : <code>help CHAPTER</code><br>
+Example :<br>
+<code>help 1</code> will list a few problems from Kattis that the user can attempt to increase their
+understanding of the chapter selected.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="exits-the-game-code-exit-code"><a class="link" href="#exits-the-game-code-exit-code">3.13. Exits the game : <code>exit</code></a></h3>
+<div class="paragraph">
+<p>This command provides a way for you to terminate the game.<br>
+Format : <code>exit</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="print-questions-code-print-code-code-coming-in-v2-0-code"><a class="link" href="#print-questions-code-print-code-code-coming-in-v2-0-code">3.14. Print questions : <code>print</code> <code>[coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>This command provides a way for you to print the questions you have experienced in a text file. This is for users who
+want to keep a copy of the questions they found hard, or attempted wrongly.<br>
+Format : <code>print</code></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="archive-questions-code-archive-code-code-coming-in-v2-0-code"><a class="link" href="#archive-questions-code-archive-code-code-coming-in-v2-0-code">3.15. Archive questions : <code>archive</code> <code>[coming in v2.0]</code></a></h3>
+<div class="paragraph">
+<p>This command archives the current question. This is for users who found a particular question interesting, or users who are
+not sure of the correct answer and wish to review the question in greater detail in the future.<br>
+Format: <code>archive</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="faq"><a class="link" href="#faq">4. FAQ</a></h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Q</strong>: Does my game auto-save for me or do I have to manually save it? <br>
+<strong>A</strong>: The game will try to save an instance for you automatically after certain checkpoints. However, in some unforeseen circumstances, the program might terminate midway, causing your progress to not be saved. As such, we recommend users to do a manual save occasionally as well.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: How do I maximise my learning potential with the report that I have generated?  <br>
+<strong>A</strong>: The report generated will give a good indication on the chapters that you are weak at, based on the time taken to solve the questions, as well as the number of question you gotten correct. As such, more effort can be placed into practicing the chapters which are deemed “weak” by the reports as it indicates a lack of conceptual understanding.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: Is there a time limit to the questions given?<br>
+<strong>A</strong>: There is a time limit for each question, but it is gradual. Users are expected to improve with more practice and as such they should be able to answer questions within the stipulated time. Questions at the beginning are generally given more time than questions towards the ending of the chapter.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: I made an accidental mistake in my answer for the previous question. Is there a way for me to undo it?<br>
+<strong>A</strong>: Yes. You can enter the command <code>back</code> to redo the last question.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: What is the difference between <code>undo</code> and <code>back</code>? <br>
+<strong>A</strong>:`undo` will reverse the decision made by the user while <code>back</code> simply returns to the previous question. <code>undo</code> will not reverse any answer input given by the user, but rather any other console commands given.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: How can I keep a copy of the questions? <br>
+<strong>A</strong>: You can either archive the questions in the game with the command <code>archive</code> or print the questions into PDF with the command <code>print</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: Will the questions in each quiz be repeated?  <br>
+<strong>A</strong>: Each question will be phrased the same; however, the list of numbers for the question are randomly generated.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: Can I challenge friends in a multiplayer mode?  <br>
+<strong>A</strong>: Unfortunately, you can’t. However, you still can share your scores with your friends through email.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: Are there automatic software updates?   <br>
+<strong>A</strong>: There is no automatic software updates. To get the updates, you need to redownload the latest version of the software.</p>
+</div>
+<div class="paragraph">
+<p><strong>Q</strong>: How do I get technical support? <br>
+<strong>A</strong>: You can send an email to the technical team for technical assistance.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="command-summary"><a class="link" href="#command-summary">5. Command Summary</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Menu</strong> <code>menu</code></p>
+</li>
+<li>
+<p><strong>Start</strong> : <code>start</code></p>
+</li>
+<li>
+<p><strong>Select</strong> : <code>select CHAPTER</code><br>
+e.g. <code>select 3</code></p>
+</li>
+<li>
+<p><strong>Result</strong> : <code>result CHAPTER</code><br>
+e.g. <code>result 3</code></p>
+</li>
+<li>
+<p><strong>Report</strong> : <code>report</code></p>
+</li>
+<li>
+<p><strong>Back</strong> : <code>back</code></p>
+</li>
+<li>
+<p><strong>History</strong> : <code>history NUMBER</code><br>
+e.g. <code>history 5</code></p>
+</li>
+<li>
+<p><strong>Undo</strong> : <code>undo</code></p>
+</li>
+<li>
+<p><strong>Clear</strong> : <code>clear CHAPTER</code><br>
+e.g.<code>clear 2</code></p>
+</li>
+<li>
+<p><strong>Reset</strong> : <code>reset</code></p>
+</li>
+<li>
+<p><strong>Save</strong> : <code>save</code></p>
+</li>
+<li>
+<p><strong>Help</strong> : <code>help</code><br>
+e.g. <code>help 1</code></p>
+</li>
+<li>
+<p><strong>Exit</strong> : <code>exit</code></p>
+</li>
+<li>
+<p><strong>Print</strong> : <code>print</code></p>
+</li>
+<li>
+<p><strong>Archive</strong> : <code>archive</code></p>
+</li>
+</ul>
+</div>
+</div>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2019-10-29 14:24:52 SGT</div></div></div></body></html>
