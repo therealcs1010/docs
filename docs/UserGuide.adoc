@@ -20,9 +20,9 @@ By: `CS2113T-T09-3`      Since: `Sept 2019`      Licence: `MIT`
 
 AlgoSenpai Adventures (ASA) is for students taking CS2040 or any similar data structures and algorithms module who
 want to reinforce their understanding of the topics in a fast and engaging way, rather than through rote memorisation.
-More importantly, AB4 is optimized for those who prefer to work with a Command Line Interface (CLI) while still having
+More importantly, ASA is optimized for those who prefer to work with a Command Line Interface (CLI) while still having
 the benefits of a Graphical User Interface (GUI). If you can type fast, ASA can be a more time-efficient solution to
-practice your understanding as compared to VisuAlgo (which uses clicking). Interested? Jump to the <<Quick Start>> to
+reinforce your understanding as compared to VisuAlgo where you click only. Interested? Jump to the <<Quick Start>> to
 get started. Enjoy!
 
 == Quick Start
@@ -114,13 +114,13 @@ Format : `clear CHAPTER` +
 Example : +
 `clear 1` will print the results of the Sorting chapter.
 
-=== Reset the whole game : `reset`
+=== Reset the whole game : `reset` `[coming in v2.0]`
 
 This command provides a way for you to restart the entire game by clearing all progress and results. This is for users who
 wish to repeat the game after clearing all the stages. +
 Format : `reset`
 
-=== Manually save the game : `save`
+=== Manually save the game : `save` `[coming in v2.0]`
 
 This command provides a way for you to save the game manually. Normally, the game would already be saving your game for you at
 certain checkpoints. However, in the event that our auto-save function does not work, it is highly recommended to do a manual save
@@ -140,14 +140,13 @@ understanding of the chapter selected.
 This command provides a way for you to terminate the game. +
 Format : `exit`
 
-=== Print questions : `print` `[coming in v2.0]`
+=== Print questions : `print` 
 
 This command provides a way for you to print the questions you have experienced in a text file. This is for users who
 want to keep a copy of the questions they found hard, or attempted wrongly. +
 Format : `print`
 
-=== Archive questions : `archive` `[coming in v2.0]`
-
+=== Archive questions : `archive` 
 This command archives the current question. This is for users who found a particular question interesting, or users who are
 not sure of the correct answer and wish to review the question in greater detail in the future. +
 Format: `archive`
