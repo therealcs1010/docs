@@ -299,7 +299,25 @@ That means that the storage is cleared, and there will be no history on the past
     Pros: Efficient memory allocation as user can decide when to reset
 
 // end::reset[]
+=== [Proposed] ToDo Command
 
+==== Proposed Implementation
+
+The todo command is mainly for students who want to set weakly goals to revise
+their data structures and algorithms topics.
+
+==== Design Consideration
+
+===== Aspect : Motivation
+There must be an incentive for students who use this command. One proposal would be
+to increase the amount of points awarded to users who set a todo and manages to complete it.
+
+===== Aspect : How to improve on this
+Todo chapters can be tagged with a deadline so that as the user starts the program, he/she will be notified
+of any upcoming deadline and they can complete it in time. 
+//tag::task[]
+
+//end::task[]
 == Documentation
 
 Refer to the guide <<Documentation#, here>>.
